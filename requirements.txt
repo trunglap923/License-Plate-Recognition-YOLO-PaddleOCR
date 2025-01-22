@@ -1,0 +1,10 @@
+torch
+utils
+imutils
+Pillow
+deep-sort-realtime
+paddlepaddle
+paddleocr
+ultralytics
+flask
+flask-cors
