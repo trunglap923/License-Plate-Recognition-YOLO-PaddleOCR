@@ -19,6 +19,10 @@ CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
 app.config['UPLOAD_FOLDER'] = 'static/uploads'
 
+upload_folder = 'static/uploads'
+if not os.path.exists(upload_folder):
+    os.makedirs(upload_folder)
+
 # Model setup
 coco_model = YOLO('../weights/yolov8n.pt')
 license_plate_model = YOLO('../weights/best.pt')
