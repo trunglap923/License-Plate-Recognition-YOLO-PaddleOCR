@@ -30,6 +30,7 @@ tracker = DeepSort(max_age=20)
 object_dict = {2: 'car', 3: 'motorbike', 5: 'bus', 7: 'truck'}
 
 @app.route('/', methods=['GET', 'POST'])
+@cross_origin(origins='*')
 def home_page():
     if request.method == 'POST':
         try:
